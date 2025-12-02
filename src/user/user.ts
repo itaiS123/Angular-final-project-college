@@ -1,4 +1,3 @@
 import { UserComponent } from '../app/user/user.component';
 
-// Legacy alias so older imports still work
 export { UserComponent as User };

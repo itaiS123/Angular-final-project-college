@@ -6,7 +6,6 @@ import { UserI } from '../models/user-i';
 export class UserService {
   private storageKey = 'users';
   private users: UserI[] = [];
-  // BehaviorSubject so new subscribers get the latest users immediately
   private usersSubject = new BehaviorSubject<UserI[]>([]);
   users$ = this.usersSubject.asObservable();
 
@@ -22,7 +21,7 @@ export class UserService {
     } else {
       try {
         this.users = JSON.parse(json) as UserI[];
-        // normalize older users that might not have an email field
+        
         let changed = false;
         for (const u of this.users) {
           if (!u.email) {
