@@ -1,4 +1,3 @@
 import { ListUsersComponent } from '../app/list-users/list-users.component';
 
-// Legacy alias
 export { ListUsersComponent as ListUsers };

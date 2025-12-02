@@ -1,0 +1,29 @@
+/* small, neutral styling for user item */
+.user-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.user-info {
+	display: flex;
+	flex-direction: column;
+}
+.user-name {
+	font-weight: bold;
+}
+.user-actions button {
+	margin-left: 6px;
+}
+.btn-edit {
+	background: #fff3cd;
+	border: 1px solid #ffeeba;
+	padding: 6px 10px;
+}
+.btn-delete {
+	background: #f8d7da;
+	border: 1px solid #f5c6cb;
+	padding: 6px 10px;
+}
+

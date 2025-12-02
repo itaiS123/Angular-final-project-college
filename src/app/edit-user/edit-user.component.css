@@ -1,0 +1,8 @@
+.edit-container { max-width: 420px; margin: 24px auto; padding: 20px; background: #fff; border-radius: 6px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); }
+.form-row { margin-bottom: 14px; }
+label { display:block; margin-bottom: 6px; }
+input { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+.buttons { display:flex; gap:10px; margin-top: 12px; }
+.btn-save { background: #28a745; color: white; border: none; padding: 8px 12px; }
+.btn-cancel { background: #f0f0f0; border: none; padding: 8px 12px; }
+.message-error { margin-top: 12px; color: #721c24; background:#f8d7da; padding: 8px; border-radius:4px; }

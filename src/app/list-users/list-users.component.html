@@ -1,0 +1,15 @@
+<div class="users-container">
+  <div class="users-header">
+    <h2>Users</h2>
+    <div class="header-actions">
+      <button (click)="addUser()" class="btn-add">Add User</button>
+      <button (click)="logout()" class="btn-logout">Logout</button>
+    </div>
+  </div>
+
+  <div *ngIf="users.length === 0" class="no-users">No users found.</div>
+
+  <div class="users-list">
+    <app-user *ngFor="let u of users" [user]="u" (edit)="edit($event)" (delete)="delete($event)"></app-user>
+  </div>
+</div>

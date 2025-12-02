@@ -1,1 +1,10 @@
-<p>user works!</p>
+<div class="user-item" *ngIf="user">
+	<div class="user-info">
+		<div class="user-name">{{ user.name }}</div>
+		<div class="user-password">•••••••</div>
+	</div>
+	<div class="user-actions">
+		<button (click)="onEdit()" class="btn-edit">Edit</button>
+		<button (click)="onDelete()" class="btn-delete">Delete</button>
+	</div>
+</div>
